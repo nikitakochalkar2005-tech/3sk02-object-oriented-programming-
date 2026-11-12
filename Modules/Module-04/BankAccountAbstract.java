@@ -16,6 +16,7 @@ class savingAccount extends BankAccount{
     savingAccount(String name, double balance){
         super(name, balance);
     }
+    @Override
     void calculateAccountInterest(){
         System.out.println("saving account having interest = "+ accountBalance * 0.4);
     }
@@ -26,6 +27,7 @@ class  currentAccount extends BankAccount{
     currentAccount( String name, double balance){
         super(name, balance);
     }
+    @Override
     void calculateAccountInterest(){
         System.out.println("current account having zero interest");
     }
